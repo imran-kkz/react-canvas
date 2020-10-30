@@ -1,6 +1,6 @@
 import React from "react"
 
-function Joke(props){
+function JokeApp(props){
     return (
         <div>
             <h3>
@@ -13,4 +13,4 @@ function Joke(props){
     )
 }
 
-export default Joke
+export default JokeApp

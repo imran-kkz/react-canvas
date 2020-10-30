@@ -1,5 +1,5 @@
+import './JokeApp';
 import './App.css';
-import './Joke.js'
 
 function App() {
   return (
@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         Joke App
       </header>
-      <Joke
+      <JokeApp
         joke={{
           question:"Why did the chicken cross the road?",
           joke:"because it did"}}/>
