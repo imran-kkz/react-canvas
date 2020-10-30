@@ -1,4 +1,4 @@
-import './JokeApp';
+import JokeApp from './JokeApp';
 import './App.css';
 
 function App() {
@@ -6,11 +6,11 @@ function App() {
     <div className="App">
       <header className="App-header">
         Joke App
+        <JokeApp
+          joke={{
+            question:"",
+            joke:"because it did"}}/>
       </header>
-      <JokeApp
-        joke={{
-          question:"Why did the chicken cross the road?",
-          joke:"because it did"}}/>
     </div>
   );
 }

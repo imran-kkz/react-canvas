@@ -1,14 +1,18 @@
 import React from "react"
 
 function JokeApp(props){
+    const question = props.joke.question
     return (
         <div>
+            {
+                question != "" &&
+                <p>
+                    {props.joke.question}
+                </p>
+            }
             <h3>
-                Q:{props.joke.question}
+                {props.joke.joke}
             </h3>
-            <p>
-                A:{props.joke.joke}
-            </p>
         </div>
     )
 }
