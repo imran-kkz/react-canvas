@@ -10,9 +10,10 @@ function JokeApp(props){
                     {props.joke.question}
                 </p>
             }
-            <h3>
+            <h3 style={{textDecoration : true}}>
                 {props.joke.joke}
             </h3>
+            <hr></hr>
         </div>
     )
 }
