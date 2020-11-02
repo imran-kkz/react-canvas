@@ -1,17 +1,17 @@
 import React from "react"
 
 function JokeApp(props){
-    const question = props.joke.question
+    const question = props.question
     return (
         <div>
             {
-                question != "" &&
+                question !== "" &&
                 <p>
-                    {props.joke.question}
+                    {props.question}
                 </p>
             }
             <h3 style={{textDecoration : true}}>
-                {props.joke.joke}
+                {props.answer}
             </h3>
             <hr></hr>
         </div>

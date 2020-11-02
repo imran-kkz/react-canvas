@@ -1,14 +1,9 @@
 import JokeApp from './JokeApp';
 import './App.css';
-import './jokesData'
 import jokesData from './jokesData';
 
 function App() {
-  const jokesComponents = jokesData.map((joke)=> {
-    return (
-      <JokeApp question={joke.question} joke={joke.joke}/>
-    )
-  })
+  const jokesComponents = jokesData.map(joke => <JokeApp key={joke.id} question={joke.question} answer={joke.answer}/>)
   return (
     <div>
       {jokesComponents}
