@@ -30,3 +30,5 @@ const products = [
         description: "Big Boy over here!"
     },
 ]
+
+export default products
