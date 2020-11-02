@@ -25,3 +25,5 @@ const jokesData = [
         joke:"What the air was really like that day"
     }
 ]
+
+export default jokesData
