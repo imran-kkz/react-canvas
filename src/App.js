@@ -5,7 +5,7 @@ import products from './productData';
 import Product from './Product'
 
 function App() {
-  const productsList = products.map((product)=> <Product name={product.name} price={product.price} description={product.description}/>)
+  const productsList = products.map((product)=> <Product name={product.name} key={product.id} price={product.price} description={product.description}/>)
   return (
   <div className="App">
     {productsList}
