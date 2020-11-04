@@ -1,20 +1,17 @@
 import React, {Component} from 'react'
 
-class App extends React.Component {
-  constructor() {
+class App extends Component {
+  constructor () {
     super()
     this.state = {
-      name: "imran",
-      age: 3
-    }
+      loggedIn: false
+  }
   }
   render() {
-    return (
-      <div>
-        <h1>{this.state.name}</h1>
-        <h3>{this.state.age} years old</h3>
-      </div>
-    )
+    if (this.state.loggedIn){
+      return <h1>You are currently logged In</h1>
+    }
+    return <h1>You are currently logged Out</h1>
   }
 }
 
