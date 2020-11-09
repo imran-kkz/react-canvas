@@ -1,10 +1,5 @@
 import React from 'react'
 
-function clicked() {
-    return (
-        console.log("clicked!")
-    )
-}
 class NumberState extends React.Component {
     constructor() {
     super()
@@ -12,11 +7,16 @@ class NumberState extends React.Component {
         count: 0
         }
     }
+
+    handleClick() {
+        console.log("clicked!")
+    }
+
     render() {
         return (
             <div>
                 <h1>{this.state.count}</h1>
-                <button onClick={clicked}>Change!</button>
+                <button onClick={this.handleClick}>Change!</button>
             </div>
         )
     }
