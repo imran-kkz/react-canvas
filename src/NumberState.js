@@ -2,14 +2,19 @@ import React from 'react'
 
 class NumberState extends React.Component {
     constructor() {
-    super()
-    this.state = {
-        count: 0
-        }
+        super()
+        this.state = {
+            count: 0
+            }
+        this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick() {
-        console.log("clicked!")
+        this.setState((prevState) => {
+            return {
+                count: prevState.count + 1
+            }
+        }) 
     }
 
     render() {
