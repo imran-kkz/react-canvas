@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import NumberState from './NumberState'
 
 class App extends Component {
   constructor () {
@@ -8,10 +9,9 @@ class App extends Component {
   }
   }
   render() {
-    if (this.state.loggedIn){
-      return <h1>You are currently logged In</h1>
-    }
-    return <h1>You are currently logged Out</h1>
+    return (
+      <NumberState />
+    )
   }
 }
 

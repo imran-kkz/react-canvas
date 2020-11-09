@@ -5,7 +5,7 @@ import App from './App';
 import Events from './Events'
 
 ReactDOM.render(
-    // <App />,
-    <Events />,
+    <App />,
+    // <Events />,
   document.getElementById('root')
 )
