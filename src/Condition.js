@@ -5,7 +5,7 @@ function Condition(props) {
 
     return (
         <div>
-            {props.loggedIn == true ? <h1>loading...</h1> : <h1>loggedin</h1>}
+            {props.loggedIn === true ? <h1>loading...</h1> : <h1>loggedin</h1>}
         </div>
     )
     // if (props.loggedIn == true){
