@@ -1,16 +1,27 @@
 import React, {Component} from 'react'
-import NumberState from './NumberState'
+import Condition from './Condition'
 
 class App extends Component {
   constructor () {
     super()
     this.state = {
-      loggedIn: false
+      loggedIn: true
+    }
   }
-  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({
+        loggedIn: false
+      })
+    }, 1500)
+  }  
+
   render() {
     return (
-      <NumberState />
+      <div>
+        <Condition loggedIn={this.state.loggedIn}/>
+      </div>
     )
   }
 }

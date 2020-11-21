@@ -26,21 +26,21 @@ class NumberState extends React.Component {
         })
     }
 
-    componentDidMount() { //you were just rendered - will only run once
-        // do something before my app renders so that I can do things
-    }
+    // componentDidMount() { //you were just rendered - will only run once
+    //     // do something before my app renders so that I can do things
+    // }
 
-    componentWillReceiveProps() {
-        // someone just gave you a gift - every single time you receive props, it will run this component
-    }
+    // componentWillReceiveProps() {
+    //     // someone just gave you a gift - every single time you receive props, it will run this component
+    // }
 
-    shouldComponentUpdate() {
-        // making a decision if you need to change
-    }
+    // shouldComponentUpdate() {
+    //     // making a decision if you need to change
+    // }
 
-    componentWillUnmount() {
-        // cleanup or teardown of components
-    }
+    // componentWillUnmount() {
+    //     // cleanup or teardown of components
+    // }
     render() {
         return (
             <div>
