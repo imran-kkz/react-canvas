@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App6 from './App6';
+import FormsApp from './FormsApp';
 
 ReactDOM.render(
-    <App6 />,
+    <FormsApp />,
   document.getElementById('root')
 )
