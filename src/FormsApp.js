@@ -6,13 +6,14 @@ class FormsApp extends Component{
         super()
         this.state = {
             firstName: "",
+            checked: true,
             lastName: ""
         }
         this.handleChange = this.handleChange.bind(this)
     }
 
     handleChange(event){
-        const {name, value} = event.target
+        const {name, value, type, checked} = event.target
         this.setState({
             [name]: value
         })
@@ -35,6 +36,14 @@ class FormsApp extends Component{
                 onChange={this.handleChange}
                 />
                 <h1>{this.state.firstName} {this.state.lastName} </h1>
+                <br/>
+                <input
+                    type="checkbox"
+                    value={this.state.checked}
+                    name="checked"
+                    checked={this.state.checked}
+                    onChange={this.handleChange}
+                />
             </form>
         )
     }
