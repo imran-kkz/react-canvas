@@ -23,17 +23,17 @@ class FormsApp extends Component{
         return (
             <form>
                 <input type="text" 
-                value={this.state.firstName} 
-                name="firstName" 
-                placeholder="First Name" 
-                onChange={this.handleChange}
+                    value={this.state.firstName} 
+                    name="firstName" 
+                    placeholder="First Name" 
+                    onChange={this.handleChange}
                 />
                 <br/>
                 <input type="text" 
-                value={this.state.lastName} 
-                name="lastName" 
-                placeholder="Last Name" 
-                onChange={this.handleChange}
+                    value={this.state.lastName} 
+                    name="lastName" 
+                    placeholder="Last Name" 
+                    onChange={this.handleChange}
                 />
                 <h1>{this.state.firstName} {this.state.lastName} </h1>
                 <br/>
