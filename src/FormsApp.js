@@ -14,9 +14,7 @@ class FormsApp extends Component{
 
     handleChange(event){
         const {name, value, type, checked} = event.target
-        this.setState({
-            [name]: value
-        })
+        type === "checkbox" ? this.setState({ [name]: checked}) : this.setState({[name]: value})
     }
 
     render() {
