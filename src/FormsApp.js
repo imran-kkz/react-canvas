@@ -7,7 +7,9 @@ class FormsApp extends Component{
         this.state = {
             firstName: "",
             checked: true,
-            lastName: ""
+            lastName: "",
+            checked: false,
+            gender: ""
         }
         this.handleChange = this.handleChange.bind(this)
     }
@@ -42,6 +44,21 @@ class FormsApp extends Component{
                     checked={this.state.checked}
                     onChange={this.handleChange}
                 />
+                <br/>
+                <input
+                    type="radio"
+                    value="Male"
+                    name="gender"
+                    checked={this.state.gender === "Male"}
+                    onChange={this.handleChange}
+                /> Female
+                <input
+                    type="radio"
+                    value="Female"
+                    name="gender"
+                    checked={this.state.gender === "Female"}
+                    onChange={this.handleChange}
+                /> Male
             </form>
         )
     }
